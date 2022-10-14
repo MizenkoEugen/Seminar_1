@@ -3,21 +3,21 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.WriteLine("Введите два числа:");
-int a = int.Parse(Console.ReadLine());
-int b = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите два целых числа:");
+int a = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
 if (a > b)
 {
-    Console.WriteLine($"{a} > {b}");
+    Console.WriteLine($"Число {a} больше, число {b} меньше");
 }
 else
 {
-    if (a == b)
+    if (a < b)
     {
-        Console.WriteLine($"{a} = {b}");
+        Console.WriteLine($"Число {a} меньше, число {b} больше");
     }
     else
     {
-        Console.WriteLine($"{a} < {b}");
+        Console.WriteLine($"Число {a} равно числу {b}");
     }
 }
